@@ -41,7 +41,8 @@
    /* contact css */
    #contact{
      color: white;
-    
+    border-bottom:solid orange 10px;
+
    }
        /* footer css */
        ul {
@@ -220,7 +221,21 @@ font-family: 'Josefin Sans', sans-serif;
 #carasoul{
   padding-top: 12.2rem;
 }
-
+/* map css */
+.map-container{
+overflow:hidden;
+padding-bottom:20%;
+position:relative;
+height:0;
+border-top: solid orange 10px; 
+}
+.map-container iframe{
+left:0;
+top:0;
+height:500px;
+width:100%;
+position:absolute;
+}
          </style>
          <!-- contact java -->
 <script
@@ -430,6 +445,16 @@ crossorigin="anonymous"
     
     </form>
   </div>
+</section> 
+
+<section>
+  <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+  <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=minarepakistan+lahore+Pakistan" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--Google Maps-->
 </section>
 <!-- footer -->
 <section>
